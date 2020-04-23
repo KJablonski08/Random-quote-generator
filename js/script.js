@@ -3,10 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
 /*** 
  * `quotes` array 
 ***/
@@ -65,53 +61,50 @@ let quotes = [
 ];
 
 /***
- * `getRandomQuote` function
- * The getRandomQuote function should create a random number, and use that random number to return a random quote object from the quotes array.
+ * The getRandomQuote function creates a random number, and use that random number to return a random quote object from the quotes array.
 ***/
 
 function getRandomQuote() {
-  //create a variable (num) to store a random number ranging from zero to the index of the last item in the quotes array
+  //stores a random number ranging from zero to the index of the last item in the quotes array
   let num = Math.random() * (0, (quotes.length - 1)) - 0;
   num = Math.floor(num);
 
-  //the function should return a random quote object using the random number variable above and bracket notation on the quotes array
+  //returns a random quote object using the num variable above
   return quotes[num];
 }
 
 /***
- * `printQuote` function
- * The app should display a new quote each time the user clicks the "Show another quote" button using a printQuote function.
+ * the pringQuote function displays a new quote each time the user clicks the "Show another quote" button 
 ***/
 
 function printQuote() {
-  //create a variable to store a random quote object from the getRandomQuote() function.
+  //stores a random quote object from the getRandomQuote() function.
   let randomQuoteObject = getRandomQuote();
 
-  //Create another variable to store the HTML string. Set it equal to a string containing two <p> elements
-  //Do not include the second closing </p> tag for now – you will add it at the end of this step (line 112)
+  //stores the HTML string
+  //Does not include the second closing </p> tag - added at the end (line 112)
   let quote = `<p class="quote">${randomQuoteObject.quote}</p><p class="source"> ${randomQuoteObject.source}`
 
-  //If the random quote object has a citation property, concatenate a <span> element with the class "citation" to the HTML string.
+  //If the randomQuoteObject has a citation property, concatenates a <span> element with the class "citation" to the HTML string.
   if ( randomQuoteObject.citation ) {
     quote += `<span class="citation">${randomQuoteObject.citation}</span>`
   }
 
-  //If the random quote object has a year property, concatenate a <span> element with the class "year" to the HTML string.
+  //If the randomQuoteObject has a year property, concatenates a <span> element with the class "year" to the HTML string.
   if ( randomQuoteObject.year ) {
     quote += `<span class="year">${randomQuoteObject.year}</span>`
   }
 
-  //complete the string by concatenating a closing </p> tag to the HTML string. This is the closing tag for the second paragraph with the class source.
+  //complete the string by concatenating a closing </p> tag to the HTML string
   quote += `</p>`
 
 
-  //printQuote function to return the full HTML string displaying a random quote.
+  //returns the full HTML string displaying a random quote.
   document.getElementById('quote-box').innerHTML = quote; 
 }
 
 /***
  * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
