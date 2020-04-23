@@ -12,48 +12,83 @@ project 1 - A Random Quote Generator
 ***/
 
 let quotes = [
-  {quote: "",
-  source: "",
+  {quote: "If you desire many things, many things will seem few",
+  source: "Benjamin Franklin",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "I have nothing to offer but blood, toil, tears, and sweat",
+  source: "Winston Churchill",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "The boisterous sea of liberty is never without a wave",
+  source: "Thomas Jefferson",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "Kind words can be short and easy to speak, but their echoes are truly endless",
+  source: "Mother Teresa",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "Labor to keep alive in your breast that little spark of celestial fire, called conscience",
+  source: "George Washington",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "The time is always right to do what is right",
+  source: "Martin Luther King, Jr.",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "If you dream it, you can do it",
+  source: "Walt Disney",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "The best things about the future is that it comes only one day at a time",
+  source: "Abraham Lincoln",
   citation: "",
   year: ""
   },
-  {quote: "",
-  source: "",
+  {quote: "Winning is not a sometime thing, You don't do things right once in a while... you do them right all the time",
+  source: "Vince Lombardi",
+  citation: "",
+  year: ""
+  },
+  {quote: "The future belongs to those who believe in the beauty of their dreams",
+  source: "Eleanor Roosevelt",
+  citation: "",
+  year: ""
+  },
+  {quote: "A people that values its privledges above its principles soon loses both",
+  source: "Dwight Eisenhower",
+  citation: "",
+  year: ""
+  },
+  {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
+  source: "Nelson Mandela",
+  citation: "",
+  year: ""
+  },
+  {quote: "Imagination is more important than knowledge",
+  source: "Albert Einstein",
+  citation: "",
+  year: ""
+  },
+  {quote: "The American, by nature, is optimistic. He is experimental, an inventor and a builder who builds best when called upon to build greatly",
+  source: "John F. Kennedy",
+  citation: "",
+  year: ""
+  },
+  {quote: "Happiness is when what you think, what you say, and what you do are in harmony",
+  source: "Mahatma Gandhi",
+  citation: "",
+  year: ""
+  },
+  {quote: "To be blind, but worse is to have eyes and not see",
+  source: "Helen Keller",
   citation: "",
   year: ""
   }
