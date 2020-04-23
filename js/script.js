@@ -94,13 +94,24 @@ let quotes = [
   }
 ];
 
-console.log(quotes)
-
 /***
  * `getRandomQuote` function
 ***/
 
+function getRandomQuote() {
 
+  //create a variable (num) to store a random number ranging from zero to the index of the last item in the quotes array
+
+  let num = Math.random() * (0, (quotes.length - 1)) - 0;
+  num = Math.floor(num);
+
+  //the function should return a random quote object using the random number variable above and bracket notation on the quotes array
+
+  return quotes[num];
+
+}
+
+console.log(getRandomQuote());
 
 /***
  * `printQuote` function
