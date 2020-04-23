@@ -128,3 +128,28 @@ function printQuote() {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+/***
+ * the getRandomBackgroundColor function displays a new background color each time the user clicks the "Show another quote" button 
+***/
+
+function getRandomBackgroundColor() {
+  //creates a random number ranging from zero to 255 (numbers for rgb)
+  function randomNum() {
+    num = Math.random() * (0, 255) - 0;
+    num = Math.floor(num);
+    return num
+  }
+
+  //creates a variable for red, green, blue 
+  let r = randomNum();
+  let g = randomNum();
+  let b = randomNum();
+
+  //returns the full HTML string displaying a random color
+  document.querySelector('body').style.backgroundColor =  `rgb(${r},${g},${b})`;
+
+}
+
+//click event listener to generate random background color for body element on the print quote button
+document.querySelector('body').addEventListener("click", getRandomBackgroundColor, false);
