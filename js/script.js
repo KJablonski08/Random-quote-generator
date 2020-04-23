@@ -111,12 +111,13 @@ function getRandomQuote() {
 
 }
 
-console.log(getRandomQuote());
-
 /***
  * `printQuote` function
 ***/
 
+function printQuote() {
+
+}
 
 
 /***
