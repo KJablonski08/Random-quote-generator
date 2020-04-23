@@ -9,43 +9,56 @@ project 1 - A Random Quote Generator
 
 let quotes = [
   {quote: "If you desire many things, many things will seem few",
-  source: "Benjamin Franklin"
+  source: "Benjamin Franklin",
+  tag: "Political Leader"
   },
   {quote: "I have nothing to offer but blood, toil, tears, and sweat",
-  source: "Winston Churchill"
+  source: "Winston Churchill",
+  tag: "Political Leader"
   },
   {quote: "The boisterous sea of liberty is never without a wave",
-  source: "Thomas Jefferson"
+  source: "Thomas Jefferson",
+  tag: "Political Leader"
   },
   {quote: "Kind words can be short and easy to speak, but their echoes are truly endless",
-  source: "Mother Teresa"
+  source: "Mother Teresa",
+  tag: "Spiritual Leader"
   },
   {quote: "Labor to keep alive in your breast that little spark of celestial fire, called conscience",
-  source: "George Washington"
+  source: "George Washington",
+  tag: "Political Leader"
   },
   {quote: "The time is always right to do what is right",
-  source: "Martin Luther King, Jr."
+  source: "Martin Luther King, Jr.",
+  tag: "Political Leader"
   },
   {quote: "If you dream it, you can do it",
-  source: "Walt Disney"
+  source: "Walt Disney",
+  tag: "Business Leader"
   },
   {quote: "The best things about the future is that it comes only one day at a time",
-  source: "Abraham Lincoln"
+  source: "Abraham Lincoln",
+  tag: "Political Leader"
   },
   {quote: "Winning is not a sometime thing, You don't do things right once in a while... you do them right all the time",
-  source: "Vince Lombardi"
+  source: "Vince Lombardi",
+  tag: "Sports Leader"
   },
   {quote: "The future belongs to those who believe in the beauty of their dreams",
-  source: "Eleanor Roosevelt"
+  source: "Eleanor Roosevelt",
+  tag: "Political Leader"
   },
   {quote: "A people that values its privledges above its principles soon loses both",
-  source: "Dwight Eisenhower"
+  source: "Dwight Eisenhower",
+  tag: "Political Leader"
   },
   {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall",
-  source: "Nelson Mandela"
+  source: "Nelson Mandela",
+  tag: "Political Leader"
   },
   {quote: "Imagination is more important than knowledge",
-  source: "Albert Einstein"
+  source: "Albert Einstein",
+  tag: "Intellectual Leader"
   },
   {quote: "So we beat on, boats against the current, borne back ceaselessly into the past",
   source: "F. Scott Fitzgerald",
@@ -53,10 +66,12 @@ let quotes = [
   year: "1925"
   },
   {quote: "Happiness is when what you think, what you say, and what you do are in harmony",
-  source: "Mahatma Gandhi"
+  source: "Mahatma Gandhi",
+  tag: "Political Leader"
   },
   {quote: "To be blind, but worse is to have eyes and not see",
-  source: "Helen Keller"
+  source: "Helen Keller",
+  tag: "Political Leader"
   }
 ];
 
@@ -93,6 +108,11 @@ function printQuote() {
   //If the randomQuoteObject has a year property, concatenates a <span> element with the class "year" to the HTML string.
   if ( randomQuoteObject.year ) {
     quote += `<span class="year">${randomQuoteObject.year}</span>`
+  }
+
+  //If the randomQuoteObject has a tag property, concatenates a <span> element with the class "tag" to the HTML string.
+  if ( randomQuoteObject.tag ) {
+    quote += `<span class="year">${randomQuoteObject.tag}</span>`
   }
 
   //complete the string by concatenating a closing </p> tag to the HTML string
