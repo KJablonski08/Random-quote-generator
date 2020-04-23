@@ -161,5 +161,7 @@ document.querySelector('body').addEventListener("click", getRandomBackgroundColo
 
 //uses setInterval() method to print a new quote to the page at regular intervals,  every 15 seconds.
 
-window.setInterval(printQuote, 15000);
-window.setInterval(getRandomBackgroundColor, 15000);
+setInterval(function () {
+  printQuote();
+  getRandomBackgroundColor();
+}, 15000);
