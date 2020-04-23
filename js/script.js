@@ -92,27 +92,27 @@ function printQuote() {
   let randomQuoteObject = getRandomQuote();
 
   //Create another variable to store the HTML string. Set it equal to a string containing two <p> elements
+  //Do not include the second closing </p> tag for now – you will add it at the end of this step (line 112)
   let quote = `<p class="quote">${randomQuoteObject.quote}</p><p class="source"> ${randomQuoteObject.source}`
 
   //If the random quote object has a citation property, concatenate a <span> element with the class "citation" to the HTML string.
-
   if ( randomQuoteObject.citation ) {
     quote += `<span class="citation"> ${randomQuoteObject.citation} </span>`
   }
 
   //If the random quote object has a year property, concatenate a <span> element with the class "year" to the HTML string.
-
   if ( randomQuoteObject.year ) {
     quote += `<span class="year"> ${randomQuoteObject.year} </span>`
   }
 
+  //complete the string by concatenating a closing </p> tag to the HTML string. This is the closing tag for the second paragraph with the class source.
   quote += `</p>`
 
-  console.log(quote)
 
+  //printQuote function to return the full HTML string displaying a random quote.
+  return quote;
 }
 
-console.log(printQuote());
 
 
 /***
