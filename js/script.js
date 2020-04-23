@@ -153,3 +153,13 @@ function getRandomBackgroundColor() {
 
 //click event listener to generate random background color for body element on the print quote button
 document.querySelector('body').addEventListener("click", getRandomBackgroundColor, false);
+
+
+/***
+ * The quote on the page automatically updates at regular intervals.
+***/
+
+//uses setInterval() method to print a new quote to the page at regular intervals,  every 15 seconds.
+
+window.setInterval(printQuote, 15000);
+window.setInterval(getRandomBackgroundColor, 15000);
