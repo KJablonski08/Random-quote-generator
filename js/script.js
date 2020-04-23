@@ -70,15 +70,12 @@ let quotes = [
 ***/
 
 function getRandomQuote() {
-
   //create a variable (num) to store a random number ranging from zero to the index of the last item in the quotes array
-
   let num = Math.random() * (0, (quotes.length - 1)) - 0;
   num = Math.floor(num);
 
   //the function should return a random quote object using the random number variable above and bracket notation on the quotes array
   return quotes[num];
-
 }
 
 /***
@@ -87,7 +84,6 @@ function getRandomQuote() {
 ***/
 
 function printQuote() {
-
   //create a variable to store a random quote object from the getRandomQuote() function.
   let randomQuoteObject = getRandomQuote();
 
@@ -97,12 +93,12 @@ function printQuote() {
 
   //If the random quote object has a citation property, concatenate a <span> element with the class "citation" to the HTML string.
   if ( randomQuoteObject.citation ) {
-    quote += `<span class="citation"> ${randomQuoteObject.citation} </span>`
+    quote += `<span class="citation">${randomQuoteObject.citation}</span>`
   }
 
   //If the random quote object has a year property, concatenate a <span> element with the class "year" to the HTML string.
   if ( randomQuoteObject.year ) {
-    quote += `<span class="year"> ${randomQuoteObject.year} </span>`
+    quote += `<span class="year">${randomQuoteObject.year}</span>`
   }
 
   //complete the string by concatenating a closing </p> tag to the HTML string. This is the closing tag for the second paragraph with the class source.
@@ -110,14 +106,12 @@ function printQuote() {
 
 
   //printQuote function to return the full HTML string displaying a random quote.
-  return quote;
+  document.getElementById('quote-box').innerHTML = quote; 
 }
-
-
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-//document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
