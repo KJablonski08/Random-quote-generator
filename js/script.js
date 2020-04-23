@@ -77,7 +77,7 @@ let quotes = [
   citation: "",
   year: ""
   },
-  {quote: "o we beat on, boats against the current, borne back ceaselessly into the past",
+  {quote: "So we beat on, boats against the current, borne back ceaselessly into the past",
   source: "F. Scott Fitzgerald",
   citation: "The Great Gatsby",
   year: "1925"
@@ -96,6 +96,7 @@ let quotes = [
 
 /***
  * `getRandomQuote` function
+ * The getRandomQuote function should create a random number, and use that random number to return a random quote object from the quotes array.
 ***/
 
 function getRandomQuote() {
@@ -106,18 +107,29 @@ function getRandomQuote() {
   num = Math.floor(num);
 
   //the function should return a random quote object using the random number variable above and bracket notation on the quotes array
-
   return quotes[num];
 
 }
 
 /***
  * `printQuote` function
+ * The app should display a new quote each time the user clicks the "Show another quote" button using a printQuote function.
 ***/
 
 function printQuote() {
 
+  //create a variable to store a random quote object from the getRandomQuote() function.
+  let randomQuoteObject = getRandomQuote();
+
+  //Create another variable to store the HTML string. Set it equal to a string containing two <p> elements
+  let quote = `<p class="quote">${randomQuoteObject.quote}</p><br><p class="source"> ${randomQuoteObject.source} </p>`
+
+  console.log(randomQuoteObject.quote)
+  console.log(randomQuoteObject.source)
+
 }
+
+console.log(printQuote());
 
 
 /***
