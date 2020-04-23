@@ -77,10 +77,10 @@ let quotes = [
   citation: "",
   year: ""
   },
-  {quote: "The American, by nature, is optimistic. He is experimental, an inventor and a builder who builds best when called upon to build greatly",
-  source: "John F. Kennedy",
-  citation: "",
-  year: ""
+  {quote: "o we beat on, boats against the current, borne back ceaselessly into the past",
+  source: "F. Scott Fitzgerald",
+  citation: "The Great Gatsby",
+  year: "1925"
   },
   {quote: "Happiness is when what you think, what you say, and what you do are in harmony",
   source: "Mahatma Gandhi",
