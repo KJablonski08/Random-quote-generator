@@ -10,6 +10,7 @@ navigate to index.html on your local device
 
 ## Usage
 
+Install or Navigate to deployed site: https://kjablonski08.github.io/Random-quote-generator/
 Begin by clicking "show another quote" button
 
 ## Contributing
