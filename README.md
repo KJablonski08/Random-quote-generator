@@ -3,6 +3,8 @@
 Random-Quote-Generator is a fun site for inspiration. The app generates random quotes from famous historical leaders when "show another quote" button is clicked 
 If the user does not click the "show another quote" button, a new quote will automatically generate at set timed intervals 
 
+![](random-quote-generator.gif)
+
 ## Installation
 
 clone this Repo
