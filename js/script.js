@@ -14,34 +14,29 @@ const fetchQuotes = function () {
 
 fetchQuotes();
 
-/***
- * The getRandomQuote function creates a random number, and use that random number to return a random quote object from the quotes array.
- ***/
+/**
+ * getRandomQuote function
+ * @return {string} A random quote from the quotes object
+ */
 
 function getRandomQuote() {
-	//stores a random number ranging from zero to the index of the last item in the quotes array
 	let num = Math.random() * (0, quotes.length - 1) - 0;
 	num = Math.floor(num);
-
-	//returns a random quote object using the num variable above
 	return quotes[num];
 }
 
-/***
- * the pringQuote function displays a new quote each time the user clicks the "Show another quote" button
- ***/
+/**
+ * pringQuote function
+ * @return {string} A new random quote from the quotes object
+ */
 
-const printQuote = async function () {
-	//stores a random quote object from the getRandomQuote() function.
+const printQuote = function () {
 	let randomQuoteObject = getRandomQuote();
-
-	//stores the HTML string
-	//Does not include the second closing </p> tag - added at the end (line 112)
-	let quote = `<blockquote>${randomQuoteObject.text}<p class="source"> ${randomQuoteObject.author}`;
-
-	//If the randomQuoteObject has a citation property, concatenates a <span> element with the class "citation" to the HTML string.
-	if (randomQuoteObject.citation) {
-		quote += `<span class="citation">${randomQuoteObject.citation}</span>`;
+	console.log(randomQuoteObject);
+	console.log(typeof randomQuoteObject.author);
+	let quote = `<blockquote>${randomQuoteObject.text}`;
+	if (randomQuoteObject.author != null) {
+		quote += `<p class="source"> ${randomQuoteObject.author}</p>`;
 	}
 
 	//complete the string by concatenating a closing </p> tag to the HTML string

@@ -128,12 +128,11 @@ blockquote:first-line {
 
 blockquote:first-letter {
 	font-size: 2.9em;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	float: left;
 	line-height: 0.52em;
-	margin-right: -18px;
+	margin-right: -5px;
 	position: relative;
-	z-index: 1;
 }
 
 @-moz-document url-prefix() {
