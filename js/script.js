@@ -48,7 +48,7 @@ const printQuote = async function () {
 	quote += `</blockquote>`;
 
 	//returns the full HTML string displaying a random quote.
-	document.getElementById('quote-box').innerHTML = quote;
+	document.querySelector('.container').innerHTML = quote;
 };
 
 /***

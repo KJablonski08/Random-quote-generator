@@ -48,6 +48,10 @@ h1 {
 	justify-content: center;
 }
 
+.quote-box {
+	border: 1px solid hotpink;
+}
+
 .source {
 	font-size: 1rem;
 	letter-spacing: 0.05em;
