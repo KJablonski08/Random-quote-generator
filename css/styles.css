@@ -44,35 +44,8 @@ h1 {
 }
 
 .container {
-	width: 85%;
-	max-width: 1024px;
-	margin: auto;
-	padding: 5px;
-}
-
-.quote-box {
-	text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
-	line-height: 0.5;
-}
-
-.quote:before,
-.quote:after {
-	font-size: 3rem;
-	line-height: 2.5rem;
-	position: absolute;
-}
-
-.quote:before {
-	content: '“';
-	top: 0.1em;
-	left: -0.5em;
-}
-
-.quote:after {
-	content: '”';
-	bottom: -0.1em;
-	margin-left: 0.1em;
-	position: absolute;
+	display: grid;
+	justify-content: center;
 }
 
 .source {
@@ -85,11 +58,6 @@ h1 {
 
 .source:before {
 	content: '—';
-}
-
-.year:before {
-	content: ', ';
-	font-style: normal;
 }
 
 @media (min-width: 768px) {
@@ -140,32 +108,14 @@ h1 {
 blockquote {
 	width: 565px;
 	font: 2.65em CallunaRegular;
-	letter-spacing: 0.075em;
-	float: left;
+	letter-spacing: 0.1em;
 	padding: 45px 0 30px 25px;
 	margin: 0;
-	border-top: 2px dotted #858585;
-	border-bottom: 2px dotted #858585;
+	border-top: 10px dotted #858585;
+	border-bottom: 10px dotted #858585;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
 }
-
-/* .container:before {
-	content: '“';
-	font-size: 13em;
-	position: absolute;
-	left: -100px;
-	color: #666;
-} */
-
-/* .container:after {
-	content: '”';
-	font-size: 13em;
-	position: absolute;
-	right: -100px;
-	top: 150px;
-	color: #666;
-} */
 
 blockquote:first-line {
 	font: 1.85em 'Sketch Block';
