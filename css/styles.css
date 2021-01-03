@@ -55,15 +55,6 @@ h1 {
 	line-height: 0.5;
 }
 
-.quote {
-	font-size: 2rem;
-	font-weight: 400;
-	line-height: 1.2;
-	position: relative;
-	margin: 0;
-	margin-left: 10px;
-}
-
 .quote:before,
 .quote:after {
 	font-size: 3rem;
@@ -96,15 +87,6 @@ h1 {
 	content: '—';
 }
 
-.citation {
-	font-style: italic;
-}
-
-.citation:before {
-	content: ', ';
-	font-style: normal;
-}
-
 .year:before {
 	content: ', ';
 	font-style: normal;
@@ -131,13 +113,6 @@ h1 {
 		font-size: 1.5rem;
 	}
 
-	.container {
-		padding: 25px 25px 15px 55px;
-		background: rgba(0, 0, 0, 0.1);
-		border-left: 5px solid rgba(0, 0, 0, 0.3);
-		border-radius: 0 4px 4px 0;
-	}
-
 	.quote {
 		font-size: 4rem;
 	}
@@ -157,5 +132,58 @@ h1 {
 
 	.source {
 		font-size: 1.25rem;
+	}
+}
+
+/* BLOCKQUOTE */
+
+blockquote {
+	width: 565px;
+	font: 2.65em CallunaRegular;
+	letter-spacing: 0.075em;
+	float: left;
+	padding: 45px 0 30px 25px;
+	margin: 0;
+	border-top: 2px dotted #858585;
+	border-bottom: 2px dotted #858585;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+}
+
+/* .container:before {
+	content: '“';
+	font-size: 13em;
+	position: absolute;
+	left: -100px;
+	color: #666;
+} */
+
+/* .container:after {
+	content: '”';
+	font-size: 13em;
+	position: absolute;
+	right: -100px;
+	top: 150px;
+	color: #666;
+} */
+
+blockquote:first-line {
+	font: 1.85em 'Sketch Block';
+	color: #fff79e;
+}
+
+blockquote:first-letter {
+	font-size: 2.9em;
+	text-transform: lowercase;
+	float: left;
+	line-height: 0.52em;
+	margin-right: -18px;
+	position: relative;
+	z-index: 1;
+}
+
+@-moz-document url-prefix() {
+	blockquote:first-letter {
+		margin-top: -29px;
 	}
 }

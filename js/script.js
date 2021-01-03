@@ -37,25 +37,15 @@ const printQuote = async function () {
 
 	//stores the HTML string
 	//Does not include the second closing </p> tag - added at the end (line 112)
-	let quote = `<p class="quote">${randomQuoteObject.text}</p><p class="source"> ${randomQuoteObject.author}`;
+	let quote = `<blockquote>${randomQuoteObject.text}<p class="source"> ${randomQuoteObject.author}`;
 
 	//If the randomQuoteObject has a citation property, concatenates a <span> element with the class "citation" to the HTML string.
 	if (randomQuoteObject.citation) {
 		quote += `<span class="citation">${randomQuoteObject.citation}</span>`;
 	}
 
-	//If the randomQuoteObject has a year property, concatenates a <span> element with the class "year" to the HTML string.
-	if (randomQuoteObject.year) {
-		quote += `<span class="year">${randomQuoteObject.year}</span>`;
-	}
-
-	//If the randomQuoteObject has a tag property, concatenates a <span> element with the class "tag" to the HTML string.
-	if (randomQuoteObject.tag) {
-		quote += `<span class="year">${randomQuoteObject.tag}</span>`;
-	}
-
 	//complete the string by concatenating a closing </p> tag to the HTML string
-	quote += `</p>`;
+	quote += `</blockquote>`;
 
 	//returns the full HTML string displaying a random quote.
 	document.getElementById('quote-box').innerHTML = quote;
