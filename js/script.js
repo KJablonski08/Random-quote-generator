@@ -7,7 +7,6 @@ const fetchQuotes = function () {
 		.get('https://type.fit/api/quotes')
 		.then((res) => {
 			quotes = res.data;
-			console.log(quotes);
 		})
 		.catch((err) => console.error(err));
 };

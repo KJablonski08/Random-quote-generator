@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 body {
-	background-color: rgb(00, 00, 80);
+	background-color: rgb(0, 29, 74);
 	color: white;
 	font-family: 'Unica One', cursive;
-	padding: 5px;
 }
 
 header {
@@ -48,8 +47,55 @@ h1 {
 	justify-content: center;
 }
 
-.quote-box {
-	border: 1px solid hotpink;
+.container:before {
+	content: '“';
+	font-size: 13em;
+	position: absolute;
+	left: 2em;
+	color: #666;
+}
+
+.container:after {
+	content: '”';
+	font-size: 20em;
+	position: absolute;
+	right: 1.2em;
+	top: 1em;
+	color: #666;
+}
+
+/* BLOCKQUOTE */
+
+blockquote {
+	width: 565px;
+	font: 2.65em 'Unica One';
+	letter-spacing: 0.1em;
+	padding: 45px 0 30px 25px;
+	margin: 0;
+	border-top: 10px dotted #858585;
+	border-bottom: 10px dotted #858585;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+}
+
+blockquote:first-line {
+	font: 1.85em 'Unica One';
+	color: #fff79e;
+}
+
+blockquote:first-letter {
+	font-size: 2.9em;
+	text-transform: uppercase;
+	float: left;
+	line-height: 0.52em;
+	margin-right: -5px;
+	position: relative;
+}
+
+@-moz-document url-prefix() {
+	blockquote:first-letter {
+		margin-top: -29px;
+	}
 }
 
 .source {
@@ -100,43 +146,5 @@ h1 {
 
 	.quote:after {
 		bottom: 0.1em;
-	}
-
-	.source {
-		font-size: 1.25rem;
-	}
-}
-
-/* BLOCKQUOTE */
-
-blockquote {
-	width: 565px;
-	font: 2.65em 'Unica Onegit a';
-	letter-spacing: 0.1em;
-	padding: 45px 0 30px 25px;
-	margin: 0;
-	border-top: 10px dotted #858585;
-	border-bottom: 10px dotted #858585;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-}
-
-blockquote:first-line {
-	font: 1.85em 'Unica One';
-	color: #fff79e;
-}
-
-blockquote:first-letter {
-	font-size: 2.9em;
-	text-transform: uppercase;
-	float: left;
-	line-height: 0.52em;
-	margin-right: -5px;
-	position: relative;
-}
-
-@-moz-document url-prefix() {
-	blockquote:first-letter {
-		margin-top: -29px;
 	}
 }
