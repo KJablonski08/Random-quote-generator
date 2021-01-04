@@ -47,23 +47,6 @@ h1 {
 	justify-content: center;
 }
 
-.container:before {
-	content: '“';
-	font-size: 13em;
-	position: absolute;
-	left: 2em;
-	color: #27476e;
-}
-
-.container:after {
-	content: '”';
-	font-size: 20em;
-	position: absolute;
-	right: 1.2em;
-	top: 1em;
-	color: #27476e;
-}
-
 /* BLOCKQUOTE */
 
 blockquote {
@@ -72,8 +55,8 @@ blockquote {
 	letter-spacing: 0.1em;
 	padding: 45px 0 30px 25px;
 	margin: 0;
-	border-top: 10px dotted #eaf8bf;
-	border-bottom: 10px dotted #eaf8bf;
+	border-top: 10px dotted #27476e;
+	border-bottom: 10px dotted #27476e;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
 }
