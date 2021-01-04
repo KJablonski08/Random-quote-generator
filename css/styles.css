@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 body {
-	background-color: rgb(58, 193, 98);
+	background-color: rgb(58, 60, 193);
 	color: white;
-	font-family: 'Covered By Your Grace', cursive;
+	font-family: 'Unica One', cursive;
 	padding: 5px;
 }
 
@@ -111,7 +111,7 @@ h1 {
 
 blockquote {
 	width: 565px;
-	font: 2.65em CallunaRegular;
+	font: 2.65em 'Unica Onegit a';
 	letter-spacing: 0.1em;
 	padding: 45px 0 30px 25px;
 	margin: 0;
@@ -122,7 +122,7 @@ blockquote {
 }
 
 blockquote:first-line {
-	font: 1.85em 'Sketch Block';
+	font: 1.85em 'Unica One';
 	color: #fff79e;
 }
 
