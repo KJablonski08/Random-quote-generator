@@ -98,6 +98,14 @@ blockquote:first-letter {
 	}
 }
 
+@media (max-width: 600px) {
+	blockquote {
+		margin: 0 auto;
+		width: 80%;
+		font: 1.5em 'Unica One';
+	}
+}
+
 .source {
 	font-size: 1rem;
 	letter-spacing: 0.05em;
