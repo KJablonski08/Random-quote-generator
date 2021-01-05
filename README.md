@@ -11,6 +11,10 @@ If the user does not click the "show another quote" button, a new quote will aut
 ![GitHub language count](https://img.shields.io/github/languages/count/KJablonski08/Random-quote-generator?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/KJablonski08/Random-quote-generator?style=for-the-badge)
 
+- JavaScript 
+- HTML / CSS
+- REST api - https://type.fit/api/quotes
+
 ## Installation
 
 Clone this Repo
