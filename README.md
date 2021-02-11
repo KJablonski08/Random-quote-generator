@@ -5,7 +5,7 @@ If the user does not click the "show another quote" button, a new quote will aut
  
 ![](random-quote-generator.gif)
   
-[Live Demo](https://kjablonski08.github.io/Random-quote-generator/)
+[Live Demo](https://kjablonski08.github.io/random-quote-generator/)
 
 ## Technologies Used 
 ![GitHub language count](https://img.shields.io/github/languages/count/KJablonski08/Random-quote-generator?style=for-the-badge)
